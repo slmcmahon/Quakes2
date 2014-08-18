@@ -19,6 +19,12 @@
 		3E6B8FF319A279EE00992DA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6B8FDB19A279EE00992DA9 /* UIKit.framework */; };
 		3E6B8FFB19A279EE00992DA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E6B8FF919A279EE00992DA9 /* InfoPlist.strings */; };
 		3E6B8FFD19A279EE00992DA9 /* Quakes2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B8FFC19A279EE00992DA9 /* Quakes2Tests.m */; };
+		3E6B900719A27A0600992DA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6B900619A27A0600992DA9 /* Main.storyboard */; };
+		3E6B908F19A27C6D00992DA9 /* QuakesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B908E19A27C6D00992DA9 /* QuakesTableViewController.m */; };
+		3E6B909219A27D5D00992DA9 /* QuakeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B909119A27D5D00992DA9 /* QuakeCell.m */; };
+		3E6B909519A2819600992DA9 /* QuakesTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B909419A2819600992DA9 /* QuakesTableViewModel.m */; };
+		3E6B909819A2820500992DA9 /* QuakeDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B909719A2820500992DA9 /* QuakeDetail.m */; };
+		3E6B909B19A2877600992DA9 /* QuakeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B909A19A2877600992DA9 /* QuakeDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,17 @@
 		3E6B8FF819A279EE00992DA9 /* Quakes2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quakes2Tests-Info.plist"; sourceTree = "<group>"; };
 		3E6B8FFA19A279EE00992DA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E6B8FFC19A279EE00992DA9 /* Quakes2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quakes2Tests.m; sourceTree = "<group>"; };
+		3E6B900619A27A0600992DA9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3E6B908D19A27C6D00992DA9 /* QuakesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuakesTableViewController.h; sourceTree = "<group>"; };
+		3E6B908E19A27C6D00992DA9 /* QuakesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuakesTableViewController.m; sourceTree = "<group>"; };
+		3E6B909019A27D5D00992DA9 /* QuakeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuakeCell.h; sourceTree = "<group>"; };
+		3E6B909119A27D5D00992DA9 /* QuakeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuakeCell.m; sourceTree = "<group>"; };
+		3E6B909319A2819600992DA9 /* QuakesTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuakesTableViewModel.h; sourceTree = "<group>"; };
+		3E6B909419A2819600992DA9 /* QuakesTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuakesTableViewModel.m; sourceTree = "<group>"; };
+		3E6B909619A2820500992DA9 /* QuakeDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuakeDetail.h; sourceTree = "<group>"; };
+		3E6B909719A2820500992DA9 /* QuakeDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuakeDetail.m; sourceTree = "<group>"; };
+		3E6B909919A2877600992DA9 /* QuakeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuakeDetailViewController.h; path = ../QuakeDetailViewController.h; sourceTree = "<group>"; };
+		3E6B909A19A2877600992DA9 /* QuakeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuakeDetailViewController.m; path = ../QuakeDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +124,14 @@
 		3E6B8FDD19A279EE00992DA9 /* Quakes2 */ = {
 			isa = PBXGroup;
 			children = (
+				3E6B909E19A289FB00992DA9 /* Controllers */,
+				3E6B909D19A289EE00992DA9 /* Views */,
+				3E6B909C19A289DE00992DA9 /* Models */,
 				3E6B8FE619A279EE00992DA9 /* AppDelegate.h */,
 				3E6B8FE719A279EE00992DA9 /* AppDelegate.m */,
 				3E6B8FE919A279EE00992DA9 /* Images.xcassets */,
 				3E6B8FDE19A279EE00992DA9 /* Supporting Files */,
+				3E6B900619A27A0600992DA9 /* Main.storyboard */,
 			);
 			path = Quakes2;
 			sourceTree = "<group>";
@@ -142,6 +163,37 @@
 				3E6B8FF919A279EE00992DA9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E6B909C19A289DE00992DA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E6B909319A2819600992DA9 /* QuakesTableViewModel.h */,
+				3E6B909419A2819600992DA9 /* QuakesTableViewModel.m */,
+				3E6B909619A2820500992DA9 /* QuakeDetail.h */,
+				3E6B909719A2820500992DA9 /* QuakeDetail.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3E6B909D19A289EE00992DA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E6B909019A27D5D00992DA9 /* QuakeCell.h */,
+				3E6B909119A27D5D00992DA9 /* QuakeCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3E6B909E19A289FB00992DA9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E6B909919A2877600992DA9 /* QuakeDetailViewController.h */,
+				3E6B909A19A2877600992DA9 /* QuakeDetailViewController.m */,
+				3E6B908D19A27C6D00992DA9 /* QuakesTableViewController.h */,
+				3E6B908E19A27C6D00992DA9 /* QuakesTableViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6B900719A27A0600992DA9 /* Main.storyboard in Resources */,
 				3E6B8FE219A279EE00992DA9 /* InfoPlist.strings in Resources */,
 				3E6B8FEA19A279EE00992DA9 /* Images.xcassets in Resources */,
 			);
@@ -239,7 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6B909819A2820500992DA9 /* QuakeDetail.m in Sources */,
 				3E6B8FE819A279EE00992DA9 /* AppDelegate.m in Sources */,
+				3E6B909B19A2877600992DA9 /* QuakeDetailViewController.m in Sources */,
+				3E6B909219A27D5D00992DA9 /* QuakeCell.m in Sources */,
+				3E6B909519A2819600992DA9 /* QuakesTableViewModel.m in Sources */,
+				3E6B908F19A27C6D00992DA9 /* QuakesTableViewController.m in Sources */,
 				3E6B8FE419A279EE00992DA9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
