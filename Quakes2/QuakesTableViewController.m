@@ -12,6 +12,9 @@
 #import "QuakeDetail.h"
 #import "QuakeDetailViewController.h"
 
+NSString *const quakeCellId = @"quakeCell";
+NSString *const showDetailSequeId = @"showDetail";
+
 @interface QuakesTableViewController ()<QuakesTableViewModelDelegate>
 @property (nonatomic, strong) QuakesTableViewModel *viewModel;
 @end
@@ -25,44 +28,31 @@
     _viewModel = [[QuakesTableViewModel alloc] init];
     [_viewModel setQuakesLoadedDelegate:self];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.clearsSelectionOnViewWillAppear = NO;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _viewModel.quakes.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    QuakeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"quakeCell" forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    QuakeDetail *detail = _viewModel.quakes[indexPath.row];
-    
-    [[cell quakeDetail] setText:detail.header];
-    [[cell tsunami] setText:detail.tsunami ? @"YES" : @"NO"];
-    [[cell magnitude] setText:[NSString stringWithFormat:@"%f", detail.magnitude]];
+    QuakeCell *cell = [tableView dequeueReusableCellWithIdentifier:quakeCellId forIndexPath:indexPath];
+    [cell loadData:_viewModel.quakes[indexPath.row]];
     
     return cell;
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:showDetailSequeId]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         QuakeDetail *quake = _viewModel.quakes[indexPath.row];
         QuakeDetailViewController *vc = [segue destinationViewController];
         [vc setQuakeDetail:quake];
-        //[[segue destinationViewController] setQuakeDetail:quake];
     }
 }
 

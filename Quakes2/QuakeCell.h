@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class QuakeDetail;
+
 @interface QuakeCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel *quakeDetail;
 @property (nonatomic, weak) IBOutlet UILabel *magnitude;
 @property (nonatomic, weak) IBOutlet UILabel *tsunami;
+
+- (void)loadData:(QuakeDetail *)detail;
 @end

@@ -19,4 +19,23 @@
     return self;
 }
 
++ (NSArray *)parseQuakeData:(NSDictionary *)data {
+    NSArray *features = data[@"features"];
+    NSMutableArray *tmp = [[NSMutableArray alloc] init];
+    for (NSDictionary *feature in features) {
+        NSDictionary *props = feature[@"properties"];
+        NSString *place = props[@"place"];
+        float magnitude = [props[@"mag"] floatValue];
+        id tsunamiObject = props[@"tsunami"];
+        BOOL tsunami = NO;
+        if (tsunamiObject != [NSNull null]) {
+            tsunami = [tsunamiObject boolValue];
+        }
+        
+        QuakeDetail *q = [[QuakeDetail alloc] initWithHeader:place magnitude:magnitude andTsunami:tsunami];
+        [tmp addObject:q];
+    }
+    return tmp;
+}
+
 @end

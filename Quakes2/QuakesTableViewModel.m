@@ -10,6 +10,8 @@
 #import "QuakeDetail.h"
 #import "AFNetworking.h"
 
+NSString *const earthQuakeDataUrl = @"http://earthquake.usgs.gov/earthquakes/feed/v0.1/summary/significant_month.geojson";
+
 @implementation QuakesTableViewModel
 
 -(id)init {
@@ -20,37 +22,12 @@
     return self;
 }
 
-- (void)initQuakes {
-    QuakeDetail *q1 = [[QuakeDetail alloc] initWithHeader:@"Quake 1" magnitude:1.2 andTsunami:NO];
-    QuakeDetail *q2 = [[QuakeDetail alloc] initWithHeader:@"Quake 2" magnitude:6.5 andTsunami:YES];
-    QuakeDetail *q3 = [[QuakeDetail alloc] initWithHeader:@"Quake 3" magnitude:7.1 andTsunami:NO];
-    
-    _quakes = [NSArray arrayWithObjects:q1, q2, q3, nil];
-}
-
 - (void)loadQuakeData {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    [manager GET:@"http://earthquake.usgs.gov/earthquakes/feed/v0.1/summary/significant_month.geojson" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSDictionary *data = (NSDictionary *)responseObject;
-        NSArray *features = data[@"features"];
-        NSMutableArray *tmp = [[NSMutableArray alloc] init];
-        for (NSDictionary *feature in features) {
-            NSDictionary *props = feature[@"properties"];
-            NSString *place = props[@"place"];
-            float magnitude = [props[@"mag"] floatValue];
-            id tsunamiObject = props[@"tsunami"];
-            BOOL tsunami = NO;
-            if (tsunamiObject != [NSNull null]) {
-                tsunami = [tsunamiObject boolValue];
-            }
-            
-            QuakeDetail *q = [[QuakeDetail alloc] initWithHeader:place magnitude:magnitude andTsunami:tsunami];
-            [tmp addObject:q];
-        }
-        _quakes = tmp;
+    [manager GET:earthQuakeDataUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        _quakes = [QuakeDetail parseQuakeData:responseObject];
         [self quakesLoaded];
-        
     } failure:nil];
 }
 

@@ -16,4 +16,6 @@
 
 - (id)initWithHeader:(NSString *)header magnitude:(float)mag andTsunami:(BOOL)tsu;
 
++ (NSArray *)parseQuakeData:(NSDictionary *)data;
+
 @end
