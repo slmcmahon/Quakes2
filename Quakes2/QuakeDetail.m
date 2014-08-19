@@ -10,9 +10,9 @@
 
 @implementation QuakeDetail
 
-- (id)initWithHeader:(NSString *)header magnitude:(float)mag andTsunami:(BOOL)tsu {
+- (id)initWithPlace:(NSString *)place magnitude:(float)mag andTsunami:(BOOL)tsu {
     if (self = [super init]) {
-        _header = header;
+        _place = place;
         _magnitude = mag;
         _tsunami = tsu;
     }
@@ -32,7 +32,7 @@
             tsunami = [tsunamiObject boolValue];
         }
         
-        QuakeDetail *q = [[QuakeDetail alloc] initWithHeader:place magnitude:magnitude andTsunami:tsunami];
+        QuakeDetail *q = [[QuakeDetail alloc] initWithPlace:place magnitude:magnitude andTsunami:tsunami];
         [tmp addObject:q];
     }
     return tmp;

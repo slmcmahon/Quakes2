@@ -12,7 +12,7 @@
 @implementation QuakeCell
 
 - (void)loadQakeDetail:(QuakeDetail *)detail {
-    [_quakeDetail setText:[detail header]];
+    [_quakeDetail setText:[detail place]];
     [_tsunami setText:(detail.tsunami ? @"YES" : @"NO")];
     [_magnitude setText:[NSString stringWithFormat:@"%.01f", detail.magnitude]];
 }

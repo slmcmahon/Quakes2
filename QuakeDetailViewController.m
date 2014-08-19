@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
     
-    [_detail setText:_quakeDetail.header];
+    [_detail setText:_quakeDetail.place];
     [_magnitude setText:[NSString stringWithFormat:@"%f", _quakeDetail.magnitude]];
     [_tsunami setText:_quakeDetail.tsunami ? @"YES" : @"NO"];
 }

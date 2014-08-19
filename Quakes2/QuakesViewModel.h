@@ -14,7 +14,7 @@
 
 @interface QuakesViewModel : NSObject
 
-@property (nonatomic, strong) NSArray *quakes;
+@property (nonatomic, readonly, strong) NSArray *quakes;
 @property (nonatomic, weak) id<QuakesTableViewModelDelegate> quakesLoadedDelegate;
 
 - (void)loadQuakeData;
