@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30810BCAA11C4EE1B2FAE209 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9088042539422781B649F6 /* libPods.a */; };
 		3E6B8FD819A279EE00992DA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6B8FD719A279EE00992DA9 /* Foundation.framework */; };
 		3E6B8FDA19A279EE00992DA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6B8FD919A279EE00992DA9 /* CoreGraphics.framework */; };
 		3E6B8FDC19A279EE00992DA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6B8FDB19A279EE00992DA9 /* UIKit.framework */; };
@@ -14,11 +15,6 @@
 		3E6B8FE419A279EE00992DA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B8FE319A279EE00992DA9 /* main.m */; };
 		3E6B8FE819A279EE00992DA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B8FE719A279EE00992DA9 /* AppDelegate.m */; };
 		3E6B8FEA19A279EE00992DA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E6B8FE919A279EE00992DA9 /* Images.xcassets */; };
-		3E6B8FF119A279EE00992DA9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6B8FF019A279EE00992DA9 /* XCTest.framework */; };
-		3E6B8FF219A279EE00992DA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6B8FD719A279EE00992DA9 /* Foundation.framework */; };
-		3E6B8FF319A279EE00992DA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6B8FDB19A279EE00992DA9 /* UIKit.framework */; };
-		3E6B8FFB19A279EE00992DA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E6B8FF919A279EE00992DA9 /* InfoPlist.strings */; };
-		3E6B8FFD19A279EE00992DA9 /* Quakes2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B8FFC19A279EE00992DA9 /* Quakes2Tests.m */; };
 		3E6B900719A27A0600992DA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6B900619A27A0600992DA9 /* Main.storyboard */; };
 		3E6B908F19A27C6D00992DA9 /* QuakesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B908E19A27C6D00992DA9 /* QuakesTableViewController.m */; };
 		3E6B909219A27D5D00992DA9 /* QuakeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B909119A27D5D00992DA9 /* QuakeCell.m */; };
@@ -26,16 +22,6 @@
 		3E6B909819A2820500992DA9 /* QuakeDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B909719A2820500992DA9 /* QuakeDetail.m */; };
 		3E6B909B19A2877600992DA9 /* QuakeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B909A19A2877600992DA9 /* QuakeDetailViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3E6B8FF419A279EE00992DA9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3E6B8FCC19A279EE00992DA9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3E6B8FD319A279EE00992DA9;
-			remoteInfo = Quakes2;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3E6B8FD419A279EE00992DA9 /* Quakes2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quakes2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,7 +35,6 @@
 		3E6B8FE619A279EE00992DA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E6B8FE719A279EE00992DA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3E6B8FE919A279EE00992DA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3E6B8FEF19A279EE00992DA9 /* Quakes2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quakes2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6B8FF019A279EE00992DA9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3E6B8FF819A279EE00992DA9 /* Quakes2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quakes2Tests-Info.plist"; sourceTree = "<group>"; };
 		3E6B8FFA19A279EE00992DA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -65,6 +50,8 @@
 		3E6B909719A2820500992DA9 /* QuakeDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuakeDetail.m; sourceTree = "<group>"; };
 		3E6B909919A2877600992DA9 /* QuakeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuakeDetailViewController.h; path = ../QuakeDetailViewController.h; sourceTree = "<group>"; };
 		3E6B909A19A2877600992DA9 /* QuakeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuakeDetailViewController.m; path = ../QuakeDetailViewController.m; sourceTree = "<group>"; };
+		7274AD57D7DD44E28E989D64 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		CC9088042539422781B649F6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,16 +62,7 @@
 				3E6B8FDA19A279EE00992DA9 /* CoreGraphics.framework in Frameworks */,
 				3E6B8FDC19A279EE00992DA9 /* UIKit.framework in Frameworks */,
 				3E6B8FD819A279EE00992DA9 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E6B8FEC19A279EE00992DA9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E6B8FF119A279EE00992DA9 /* XCTest.framework in Frameworks */,
-				3E6B8FF319A279EE00992DA9 /* UIKit.framework in Frameworks */,
-				3E6B8FF219A279EE00992DA9 /* Foundation.framework in Frameworks */,
+				30810BCAA11C4EE1B2FAE209 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +76,7 @@
 				3E6B8FF619A279EE00992DA9 /* Quakes2Tests */,
 				3E6B8FD619A279EE00992DA9 /* Frameworks */,
 				3E6B8FD519A279EE00992DA9 /* Products */,
+				7274AD57D7DD44E28E989D64 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				3E6B8FD419A279EE00992DA9 /* Quakes2.app */,
-				3E6B8FEF19A279EE00992DA9 /* Quakes2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +95,7 @@
 				3E6B8FD919A279EE00992DA9 /* CoreGraphics.framework */,
 				3E6B8FDB19A279EE00992DA9 /* UIKit.framework */,
 				3E6B8FF019A279EE00992DA9 /* XCTest.framework */,
+				CC9088042539422781B649F6 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -203,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E6B900019A279EE00992DA9 /* Build configuration list for PBXNativeTarget "Quakes2" */;
 			buildPhases = (
+				593A62A3F4E94981BED8FED5 /* Check Pods Manifest.lock */,
 				3E6B8FD019A279EE00992DA9 /* Sources */,
 				3E6B8FD119A279EE00992DA9 /* Frameworks */,
 				3E6B8FD219A279EE00992DA9 /* Resources */,
+				84177AC7A8F344E0B7291DE0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,24 +197,6 @@
 			productReference = 3E6B8FD419A279EE00992DA9 /* Quakes2.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3E6B8FEE19A279EE00992DA9 /* Quakes2Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3E6B900319A279EE00992DA9 /* Build configuration list for PBXNativeTarget "Quakes2Tests" */;
-			buildPhases = (
-				3E6B8FEB19A279EE00992DA9 /* Sources */,
-				3E6B8FEC19A279EE00992DA9 /* Frameworks */,
-				3E6B8FED19A279EE00992DA9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3E6B8FF519A279EE00992DA9 /* PBXTargetDependency */,
-			);
-			name = Quakes2Tests;
-			productName = Quakes2Tests;
-			productReference = 3E6B8FEF19A279EE00992DA9 /* Quakes2Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -242,11 +205,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Stephen L. McMahon";
-				TargetAttributes = {
-					3E6B8FEE19A279EE00992DA9 = {
-						TestTargetID = 3E6B8FD319A279EE00992DA9;
-					};
-				};
 			};
 			buildConfigurationList = 3E6B8FCF19A279EE00992DA9 /* Build configuration list for PBXProject "Quakes2" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -261,7 +219,6 @@
 			projectRoot = "";
 			targets = (
 				3E6B8FD319A279EE00992DA9 /* Quakes2 */,
-				3E6B8FEE19A279EE00992DA9 /* Quakes2Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,15 +234,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E6B8FED19A279EE00992DA9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		593A62A3F4E94981BED8FED5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E6B8FFB19A279EE00992DA9 /* InfoPlist.strings in Resources */,
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		84177AC7A8F344E0B7291DE0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E6B8FD019A279EE00992DA9 /* Sources */ = {
@@ -302,23 +284,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E6B8FEB19A279EE00992DA9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E6B8FFD19A279EE00992DA9 /* Quakes2Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3E6B8FF519A279EE00992DA9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3E6B8FD319A279EE00992DA9 /* Quakes2 */;
-			targetProxy = 3E6B8FF419A279EE00992DA9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3E6B8FE019A279EE00992DA9 /* InfoPlist.strings */ = {
@@ -412,6 +378,7 @@
 		};
 		3E6B900119A279EE00992DA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7274AD57D7DD44E28E989D64 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -425,6 +392,7 @@
 		};
 		3E6B900219A279EE00992DA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7274AD57D7DD44E28E989D64 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -433,46 +401,6 @@
 				INFOPLIST_FILE = "Quakes2/Quakes2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		3E6B900419A279EE00992DA9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Quakes2.app/Quakes2";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Quakes2/Quakes2-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Quakes2Tests/Quakes2Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		3E6B900519A279EE00992DA9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Quakes2.app/Quakes2";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Quakes2/Quakes2-Prefix.pch";
-				INFOPLIST_FILE = "Quakes2Tests/Quakes2Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -495,14 +423,7 @@
 				3E6B900219A279EE00992DA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		3E6B900319A279EE00992DA9 /* Build configuration list for PBXNativeTarget "Quakes2Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3E6B900419A279EE00992DA9 /* Debug */,
-				3E6B900519A279EE00992DA9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
