@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol QuakesTableViewModelDelegate<NSObject>
+- (void)quakeDataLoaded;
+@end
+
 @interface QuakesTableViewModel : NSObject
 
 @property (nonatomic, strong) NSArray *quakes;
+@property (nonatomic, weak) id<QuakesTableViewModelDelegate> quakesLoadedDelegate;
 
 @end

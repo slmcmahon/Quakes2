@@ -49,8 +49,15 @@
             [tmp addObject:q];
         }
         _quakes = tmp;
+        [self quakesLoaded];
         
     } failure:nil];
+}
+
+- (void)quakesLoaded {
+    if (_quakesLoadedDelegate && [_quakesLoadedDelegate respondsToSelector:@selector(quakeDataLoaded)]) {
+        [_quakesLoadedDelegate quakeDataLoaded];
+    }
 }
 
 @end

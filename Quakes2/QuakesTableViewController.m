@@ -12,7 +12,7 @@
 #import "QuakeDetail.h"
 #import "QuakeDetailViewController.h"
 
-@interface QuakesTableViewController ()
+@interface QuakesTableViewController ()<QuakesTableViewModelDelegate>
 @property (nonatomic, strong) QuakesTableViewModel *viewModel;
 @end
 
@@ -27,12 +27,12 @@
     return self;
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     _viewModel = [[QuakesTableViewModel alloc] init];
+    [_viewModel setQuakesLoadedDelegate:self];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -73,6 +73,10 @@
         [vc setQuakeDetail:quake];
         //[[segue destinationViewController] setQuakeDetail:quake];
     }
+}
+
+- (void)quakeDataLoaded {
+    [[self tableView] reloadData];
 }
 
 @end
