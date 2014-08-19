@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Quakes Table View Controller - Root View Controller-->
+        <!--Quakes Table View Controller - Earthquake!-->
         <scene sceneID="wgr-C3-mAN">
             <objects>
                 <tableViewController id="fcG-W1-NJM" customClass="QuakesTableViewController" sceneMemberID="viewController">
@@ -66,7 +66,7 @@
                             <outlet property="delegate" destination="fcG-W1-NJM" id="2Ft-Dm-JJO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="X8Q-7x-pZ6"/>
+                    <navigationItem key="navigationItem" title="Earthquake!" id="X8Q-7x-pZ6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Liw-35-aBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -18,15 +18,6 @@
 
 @implementation QuakesTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        _viewModel = [[QuakesTableViewModel alloc] init];
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
