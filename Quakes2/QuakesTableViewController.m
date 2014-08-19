@@ -42,7 +42,7 @@ NSString *const showDetailSequeId = @"showDetail";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     QuakeCell *cell = [tableView dequeueReusableCellWithIdentifier:quakeCellId forIndexPath:indexPath];
-    [cell loadData:_viewModel.quakes[indexPath.row]];
+    [cell loadQakeDetail:_viewModel.quakes[indexPath.row]];
     
     return cell;
 }

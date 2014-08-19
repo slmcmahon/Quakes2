@@ -15,5 +15,5 @@
 @property (nonatomic, weak) IBOutlet UILabel *magnitude;
 @property (nonatomic, weak) IBOutlet UILabel *tsunami;
 
-- (void)loadData:(QuakeDetail *)detail;
+- (void)loadQakeDetail:(QuakeDetail *)detail;
 @end
