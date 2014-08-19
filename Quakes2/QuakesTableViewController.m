@@ -8,7 +8,7 @@
 
 #import "QuakesTableViewController.h"
 #import "QuakeCell.h"
-#import "QuakesTableViewModel.h"
+#import "QuakesViewModel.h"
 #import "QuakeDetail.h"
 #import "QuakeDetailViewController.h"
 
@@ -16,7 +16,7 @@ NSString *const quakeCellId = @"quakeCell";
 NSString *const showDetailSequeId = @"showDetail";
 
 @interface QuakesTableViewController ()<QuakesTableViewModelDelegate>
-@property (nonatomic, strong) QuakesTableViewModel *viewModel;
+@property (nonatomic, strong) QuakesViewModel *viewModel;
 @end
 
 @implementation QuakesTableViewController
@@ -25,7 +25,7 @@ NSString *const showDetailSequeId = @"showDetail";
 {
     [super viewDidLoad];
     
-    _viewModel = [[QuakesTableViewModel alloc] init];
+    _viewModel = [[QuakesViewModel alloc] init];
     [_viewModel setQuakesLoadedDelegate:self];
     
     self.clearsSelectionOnViewWillAppear = NO;
@@ -58,6 +58,17 @@ NSString *const showDetailSequeId = @"showDetail";
 
 - (void)quakeDataLoaded {
     [[self tableView] reloadData];
+}
+
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake) {
+        [_viewModel loadQuakeData];
+    }
 }
 
 @end
