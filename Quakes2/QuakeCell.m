@@ -14,6 +14,6 @@
 - (void)loadQakeDetail:(QuakeDetail *)detail {
     [_quakeDetail setText:[detail header]];
     [_tsunami setText:(detail.tsunami ? @"YES" : @"NO")];
-    [_magnitude setText:[NSString stringWithFormat:@"%f", detail.magnitude]];
+    [_magnitude setText:[NSString stringWithFormat:@"%.01f", detail.magnitude]];
 }
 @end
