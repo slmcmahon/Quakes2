@@ -20,7 +20,7 @@
 		3E6B909219A27D5D00992DA9 /* QuakeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B909119A27D5D00992DA9 /* QuakeCell.m */; };
 		3E6B909519A2819600992DA9 /* QuakesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B909419A2819600992DA9 /* QuakesViewModel.m */; };
 		3E6B909819A2820500992DA9 /* QuakeDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B909719A2820500992DA9 /* QuakeDetail.m */; };
-		3E6B909B19A2877600992DA9 /* QuakeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B909A19A2877600992DA9 /* QuakeDetailViewController.m */; };
+		3ED7714E19A416CC00EA3BAB /* QuakeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED7714D19A416CC00EA3BAB /* QuakeDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +45,8 @@
 		3E6B909419A2819600992DA9 /* QuakesViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuakesViewModel.m; sourceTree = "<group>"; };
 		3E6B909619A2820500992DA9 /* QuakeDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuakeDetail.h; sourceTree = "<group>"; };
 		3E6B909719A2820500992DA9 /* QuakeDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuakeDetail.m; sourceTree = "<group>"; };
-		3E6B909919A2877600992DA9 /* QuakeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuakeDetailViewController.h; path = ../QuakeDetailViewController.h; sourceTree = "<group>"; };
-		3E6B909A19A2877600992DA9 /* QuakeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuakeDetailViewController.m; path = ../QuakeDetailViewController.m; sourceTree = "<group>"; };
+		3ED7714C19A416CC00EA3BAB /* QuakeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuakeDetailViewController.h; sourceTree = "<group>"; };
+		3ED7714D19A416CC00EA3BAB /* QuakeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuakeDetailViewController.m; sourceTree = "<group>"; };
 		7274AD57D7DD44E28E989D64 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		CC9088042539422781B649F6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,8 +145,8 @@
 		3E6B909E19A289FB00992DA9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3E6B909919A2877600992DA9 /* QuakeDetailViewController.h */,
-				3E6B909A19A2877600992DA9 /* QuakeDetailViewController.m */,
+				3ED7714C19A416CC00EA3BAB /* QuakeDetailViewController.h */,
+				3ED7714D19A416CC00EA3BAB /* QuakeDetailViewController.m */,
 				3E6B908D19A27C6D00992DA9 /* QuakesTableViewController.h */,
 				3E6B908E19A27C6D00992DA9 /* QuakesTableViewController.m */,
 			);
@@ -254,11 +254,11 @@
 			files = (
 				3E6B909819A2820500992DA9 /* QuakeDetail.m in Sources */,
 				3E6B8FE819A279EE00992DA9 /* AppDelegate.m in Sources */,
-				3E6B909B19A2877600992DA9 /* QuakeDetailViewController.m in Sources */,
 				3E6B909219A27D5D00992DA9 /* QuakeCell.m in Sources */,
 				3E6B909519A2819600992DA9 /* QuakesViewModel.m in Sources */,
 				3E6B908F19A27C6D00992DA9 /* QuakesTableViewController.m in Sources */,
 				3E6B8FE419A279EE00992DA9 /* main.m in Sources */,
+				3ED7714E19A416CC00EA3BAB /* QuakeDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
