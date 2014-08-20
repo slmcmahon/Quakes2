@@ -11,10 +11,11 @@
 @interface QuakeDetail : NSObject
 
 @property (nonatomic, copy) NSString *place;
+@property (nonatomic, strong) NSDate *dateTime;
 @property (nonatomic, assign) float magnitude;
 @property (nonatomic, assign) BOOL tsunami;
 
-- (id)initWithPlace:(NSString *)place magnitude:(float)mag andTsunami:(BOOL)tsu;
+- (id)initWithPlace:(NSString *)place date:(NSDate *)date magnitude:(float)mag andTsunami:(BOOL)tsu;
 
 + (NSArray *)parseQuakeData:(NSDictionary *)data;
 

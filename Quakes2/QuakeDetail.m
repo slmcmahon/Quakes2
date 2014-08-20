@@ -10,9 +10,10 @@
 
 @implementation QuakeDetail
 
-- (id)initWithPlace:(NSString *)place magnitude:(float)mag andTsunami:(BOOL)tsu {
+- (id)initWithPlace:(NSString *)place date:(NSDate *)date magnitude:(float)mag andTsunami:(BOOL)tsu {
     if (self = [super init]) {
         _place = place;
+        _dateTime = date;
         _magnitude = mag;
         _tsunami = tsu;
     }
@@ -31,8 +32,11 @@
         if (tsunamiObject != [NSNull null]) {
             tsunami = [tsunamiObject boolValue];
         }
-        
-        QuakeDetail *q = [[QuakeDetail alloc] initWithPlace:place magnitude:magnitude andTsunami:tsunami];
+
+        float time = [props[@"time"] floatValue] / 1000;
+        NSDate *d = [NSDate dateWithTimeIntervalSince1970:time];
+
+        QuakeDetail *q = [[QuakeDetail alloc] initWithPlace:place date:d magnitude:magnitude andTsunami:tsunami];
         [tmp addObject:q];
     }
     return tmp;
